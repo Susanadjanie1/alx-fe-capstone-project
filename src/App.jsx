@@ -1,7 +1,6 @@
 import React from "react";
-import { CartProvider } from "./context/CartContext";
-import Home from "./pages/Home";
-import "./styles/global.css";
+import { CartProvider } from "./components/context/CartContext";
+import Home from "./components/Home";
 
 function App() {
   return (

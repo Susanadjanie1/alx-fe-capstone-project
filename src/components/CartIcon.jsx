@@ -1,6 +1,6 @@
 import React from "react";
 import { ShoppingCart } from "lucide-react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "./context/CartContext";
 
 const CartIcon = ({ onClick }) => {
   const { items } = useCart();

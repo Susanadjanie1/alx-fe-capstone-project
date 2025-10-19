@@ -1,5 +1,5 @@
 import React from "react";
-import { useCart } from "../context/CartContext";
+import { useCart } from "./context/CartContext";
 
 const CartModal = ({ onClose }) => {
   const { items, removeFromCart, increase, decrease, clearCart } = useCart();
