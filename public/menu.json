@@ -1,0 +1,175 @@
+{
+  "restaurant_id": "MF001",
+  "menu_name": "Masad Foods Delivery Menu",
+  "currency": "GHS",
+  "categories": [
+    {
+      "category_id": "C01",
+      "name": "Main Dishes (Rice)",
+      "description": "Quick, complete, and satisfying meals. Flavorful rice, crispy fries, or noodles perfectly paired with your choice of protein.",
+      "items": [
+        {
+          "item_id": "I0101",
+          "name": "Fried Rice with Grilled Chicken",
+          "price": 45.0,
+          "is_featured": true,
+          "description": "Classic fried rice served with a perfectly grilled, tender chicken quarter."
+        },
+        {
+          "item_id": "I0102",
+          "name": "Jollof Rice with Fried Chicken",
+          "price": 45.0,
+          "is_featured": false,
+          "description": "Our signature smoky jollof rice paired with crispy fried chicken."
+        },
+        {
+          "item_id": "I0103",
+          "name": "Jollof Rice with Fish",
+          "price": 48.0,
+          "is_featured": false,
+          "description": "Signature jollof rice served with perfectly cooked fish."
+        },
+        {
+          "item_id": "I0104",
+          "name": "Assorted Jollof Fried Rice",
+          "price": 55.0,
+          "is_featured": true,
+          "description": "A festive blend of jollof and fried rice loaded with Chicken, Beef, Sausage, and Egg."
+        }
+      ]
+    },
+    {
+      "category_id": "C02",
+      "name": "Traditional Staples (Banku & Fufu)",
+      "description": "Experience the true taste of home. Authentic, comforting classics like Fufu and Banku served with rich soups and sauces.",
+      "items": [
+        {
+          "item_id": "I0201",
+          "name": "Banku & Grilled Tilapia",
+          "price": 60.0,
+          "is_featured": true,
+          "description": "Fermented corn and cassava dough served with whole grilled Tilapia."
+        },
+        {
+          "item_id": "I0202",
+          "name": "Fufu & Goat Meat Light Soup",
+          "price": 65.0,
+          "is_featured": true,
+          "description": "Pounded cassava and plantain served with tender goat meat in a light, aromatic soup."
+        },
+        {
+          "item_id": "I0203",
+          "name": "Banku & Okro",
+          "price": 50.0,
+          "is_featured": false,
+          "description": "Banku served with savory Okro stew. Includes a protein choice.",
+          "options": [
+            {
+              "group_name": "Protein Choice",
+              "type": "single_select",
+              "choices": [
+                { "name": "Tilapia", "price_modifier": 0.0 },
+                { "name": "Chicken", "price_modifier": 0.0 }
+              ]
+            }
+          ]
+        },
+        {
+          "item_id": "I0204",
+          "name": "Fufu & Cow Meat Light Soup",
+          "price": 60.0,
+          "is_featured": false,
+          "description": "Pounded cassava and plantain served with tender cow meat in a light soup."
+        }
+      ]
+    },
+    {
+      "category_id": "C03",
+      "name": "Noodles & Quick Bites",
+      "description": "Perfect bites and easy meals for anytime. From custom noodles to our savory Shawarma and fries.",
+      "items": [
+        {
+          "item_id": "I0301",
+          "name": "Chicken Shawarma",
+          "price": 30.0,
+          "is_featured": true,
+          "description": "Warm flatbread wrapped around marinated grilled chicken and signature creamy sauce."
+        },
+        {
+          "item_id": "I0302",
+          "name": "Noodles",
+          "price": 30.0,
+          "is_featured": false,
+          "description": "Stir-fried noodles customized with your choice of protein.",
+          "options": [
+            {
+              "group_name": "Protein Choice",
+              "type": "single_select",
+              "choices": [
+                { "name": "Chicken", "price_modifier": 0.0 },
+                { "name": "Beef", "price_modifier": 0.0 },
+                { "name": "Assorted", "price_modifier": 5.0 }
+              ]
+            }
+          ]
+        },
+        {
+          "item_id": "I0303",
+          "name": "French Fries and Chicken",
+          "price": 35.0,
+          "is_featured": false,
+          "description": "Crispy golden french fries served with seasoned, fried chicken fillets."
+        }
+      ]
+    },
+    {
+      "category_id": "C04",
+      "name": "Snacks (Rolls & Samosas)",
+      "description": "Golden, crispy pockets and spring rolls perfect as appetizers or a quick savory treat.",
+      "items": [
+        {
+          "item_id": "I0401",
+          "name": "Fried Assorted Spring Rolls",
+          "price": 25.0,
+          "is_featured": false,
+          "description": "Crispy spring rolls with a choice of Tuna, Vegetables, Peperoni, or Canned Beef filling."
+        },
+        {
+          "item_id": "I0402",
+          "name": "Minced Meat Fried Samosas (3 Pcs)",
+          "price": 20.0,
+          "is_featured": true,
+          "description": "Three savory, golden pockets filled with spiced minced beef. Great for sharing."
+        },
+        {
+          "item_id": "I0403",
+          "name": "Frozen Assorted Spring Rolls (Per Piece)",
+          "price": 5.0,
+          "is_featured": false,
+          "description": "Ready-to-fry spring rolls for a quick meal at home. Sold per piece."
+        }
+      ]
+    },
+    {
+      "category_id": "C05",
+      "name": "Beverages & Juices",
+      "description": "Thirst-quenching and naturally refreshing. Freshly squeezed and blended daily using real fruits like pineapple, watermelon, and lime.",
+      "items": [
+        {
+          "item_id": "I0501",
+          "name": "Mint Lime Juice",
+          "price": 15.0,
+          "is_featured": true,
+          "description": "Our signature blend of fresh lime and mint—the perfect refresher."
+        },
+        {
+          "item_id": "I0502",
+          "name": "Watermelon Juice",
+          "price": 15.0,
+          "is_featured": false,
+          "description": "Pure, sweet, and simple watermelon juice."
+        }
+      ]
+    }
+  ]
+}
