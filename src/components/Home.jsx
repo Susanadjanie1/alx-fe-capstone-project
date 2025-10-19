@@ -1,17 +1,28 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import MenuPage from "../components/MenuPage";
-import CheckoutPage from "../components/CheckoutPage";
+import Navbar from "./Navbar";
+import Hero from "./Hero";
+import BrowseMenu from "./BrowseMenu";
+import CustomerFavorites from "./CustomerFavorites";
+import Testimonials from "./Testimonials";
+import Footer from "./Footer";
+import MenuPage from "./MenuPage";
+import CheckoutPage from "./CheckoutPage";
 import "../styles/global.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="min-h-screen">
       <Navbar />
       <Hero />
-       <MenuPage />
-      <CheckoutPage />
+      <BrowseMenu />
+      <CustomerFavorites />
+      <Testimonials />
+      <Footer />
+      {/* Hidden sections for now - can be accessed via navigation */}
+      <div className="hidden">
+        <MenuPage />
+        <CheckoutPage />
+      </div>
     </div>
   );
 };
