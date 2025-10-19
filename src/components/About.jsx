@@ -39,7 +39,7 @@ const About = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
@@ -92,14 +92,11 @@ const About = () => {
 
             {/* Right Column - Image */}
             <div className="relative">
-              <div className="relative">
+              <div className="relative group">
                 <img
-                  src="https://picsum.photos/600/500?random=601"
+                  src="/images/food/frozen samosa.jpeg"
                   alt="Fresh ingredients preparation"
                   className="w-full h-96 md:h-[500px] object-cover rounded-2xl shadow-lg"
-                  onError={(e) => {
-                    e.target.src = "/images/placeholder-food.jpg";
-                  }}
                 />
 
                 {/* Overlay Contact Card */}
@@ -136,14 +133,11 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
-            <div className="relative">
+            <div className="relative group">
               <img
-                src="https://picsum.photos/600/400?random=602"
+                src="/images/food/samosa and spring.jpg"
                 alt="Delicious food on a plate"
                 className="w-full h-96 object-cover rounded-2xl shadow-lg"
-                onError={(e) => {
-                  e.target.src = "/images/placeholder-food.jpg";
-                }}
               />
             </div>
 

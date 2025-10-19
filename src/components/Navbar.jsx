@@ -133,16 +133,6 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                 Contact
               </button>
             </li>
-            <li>
-              <button
-                onClick={() => setCurrentPage("admin")}
-                className={`hover:text-red-600 transition-colors font-medium ${
-                  currentPage === "admin" ? "text-red-600" : ""
-                }`}
-              >
-                Admin
-              </button>
-            </li>
           </ul>
 
           {/* Right Section: Cart + Order Now */}
@@ -223,19 +213,6 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
                   }`}
                 >
                   Contact
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => {
-                    setCurrentPage("admin");
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className={`block text-gray-700 hover:text-red-600 transition-colors font-medium ${
-                    currentPage === "admin" ? "text-red-600" : ""
-                  }`}
-                >
-                  Admin
                 </button>
               </li>
             </ul>

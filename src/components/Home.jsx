@@ -8,7 +8,7 @@ import Footer from "./Footer";
 import MenuPage from "./MenuPage";
 import CheckoutPage from "./CheckoutPage";
 import About from "./About";
-import AdminPanel from "./AdminPanel";
+import Contact from "./Contact";
 import "../styles/global.css";
 
 const Home = () => {
@@ -20,10 +20,10 @@ const Home = () => {
         return <About />;
       case "menu":
         return <MenuPage />;
+      case "contact":
+        return <Contact />;
       case "checkout":
         return <CheckoutPage />;
-      case "admin":
-        return <AdminPanel />;
       default:
         return (
           <>

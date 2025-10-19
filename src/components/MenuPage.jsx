@@ -58,7 +58,7 @@ const MenuPage = () => {
   const allItems = menuService.getAllItems(menuData);
 
   return (
-    <section id="menu" className="max-w-7xl mx-auto px-6 py-16">
+    <section id="menu" className="max-w-7xl mx-auto px-6 py-16 pt-32">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           {menuData.menu_name}

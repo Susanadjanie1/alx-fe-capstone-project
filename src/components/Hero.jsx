@@ -31,24 +31,12 @@ const Hero = () => {
             <div className="relative">
               {/* Main food image */}
               <div className="relative">
-                <div className="w-80 h-80 bg-gradient-to-br from-orange-100 to-red-100 rounded-3xl shadow-2xl overflow-hidden">
-                  {/* Placeholder for food image - you can replace with actual images */}
-                  <div className="w-full h-full bg-gradient-to-br from-orange-200 to-red-200 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-red-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <svg
-                          className="w-12 h-12 text-white"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                        </svg>
-                      </div>
-                      <p className="text-gray-600 font-medium">
-                        Fresh Ingredients
-                      </p>
-                    </div>
-                  </div>
+                <div className="w-160 h-96 rounded-3xl shadow-2xl overflow-hidden">
+                  <img
+                    src="/images/food/hero.jpg"
+                    alt="Delicious Masad Foods"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Decorative elements */}
