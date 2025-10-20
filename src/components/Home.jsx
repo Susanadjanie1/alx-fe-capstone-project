@@ -9,6 +9,7 @@ import MenuPage from "./MenuPage";
 import CheckoutPage from "./CheckoutPage";
 import About from "./About";
 import Contact from "./Contact";
+import WhatsAppWidget from "./WhatsAppWidget";
 import "../styles/global.css";
 
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
       <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
       {renderPage()}
       <Footer />
+      <WhatsAppWidget />
     </div>
   );
 };
