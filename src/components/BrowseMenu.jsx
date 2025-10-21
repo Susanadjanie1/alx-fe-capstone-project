@@ -1,40 +1,45 @@
 import React from "react";
-import { Utensils, Coffee, Droplets, Cake } from "lucide-react";
+import { Link } from "react-router-dom";
+import { UtensilsCrossed, ChefHat, GlassWater, Sandwich } from "lucide-react";
 
 const BrowseMenu = () => {
   const menuCategories = [
     {
-      icon: <Utensils className="w-12 h-12 text-gray-600" />,
-      title: "Combos",
+      icon: <UtensilsCrossed className="w-12 h-12 text-gray-600" />,
+      title: "Main Dishes (Rice)",
       description:
         "Quick, complete, and satisfying meals. Flavorful rice, crispy fries, or noodles perfectly paired with your choice of protein.",
-      link: "#combos",
+      categoryId: "C01",
+      link: "/menu?category=main-dishes-rice",
     },
     {
-      icon: <Utensils className="w-12 h-12 text-gray-600" />,
-      title: "Main Dishes",
+      icon: <ChefHat className="w-12 h-12 text-gray-600" />,
+      title: "Traditional Staples",
       description:
-        "Experience the true taste of home. Authentic, comforting classics from traditional Jollof and Fufu dishes.",
-      link: "#main-dishes",
+        "Experience the true taste of home. Authentic, comforting classics like Fufu and Banku served with rich soups and sauces.",
+      categoryId: "C02",
+      link: "/menu?category=traditional-staples",
     },
     {
-      icon: <Droplets className="w-12 h-12 text-gray-600" />,
-      title: "Juices",
+      icon: <GlassWater className="w-12 h-12 text-gray-600" />,
+      title: "Beverages & Juices",
       description:
         "Freshly squeezed and blended daily using real fruits like pineapple, watermelon, orange and mint-lime.",
-      link: "#juices",
+      categoryId: "C05",
+      link: "/menu?category=beverages-juices",
     },
     {
-      icon: <Cake className="w-12 h-12 text-gray-600" />,
+      icon: <Sandwich className="w-12 h-12 text-gray-600" />,
       title: "Snacks",
       description:
         "Perfect bites for any time. Indulge in our famous Chicken Shawarma or savory spring rolls and minced meat samosas.",
-      link: "#snacks",
+      categoryId: "C04",
+      link: "/menu?category=snacks",
     },
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="browse-menu" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -63,12 +68,12 @@ const BrowseMenu = () => {
                 </p>
 
                 {/* Link */}
-                <a
-                  href={category.link}
+                <Link
+                  to={category.link}
                   className="inline-block text-red-600 font-medium hover:text-red-700 transition-colors"
                 >
                   Explore Menu
-                </a>
+                </Link>
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const InstagramImage = ({ src, alt, index }) => {
   const [imageError, setImageError] = useState(false);
@@ -51,14 +52,17 @@ const Footer = () => {
           <div className="grid md:grid-cols-3 gap-12">
             {/* Brand Section */}
             <div className="space-y-6">
-              <div className="flex items-center gap-3">
+              <Link
+                to="/"
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              >
                 <img
                   src="/MasadWhite.png"
                   alt="Masad Foods Logo"
                   className="w-12 h-12 object-contain bg-transparent"
                 />
                 <h3 className="text-2xl font-bold">Masad Foods</h3>
-              </div>
+              </Link>
 
               <p className="text-gray-300 leading-relaxed">
                 Bringing the comfort of authentic, home-cooked meals right to
@@ -126,57 +130,41 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Navigation Links */}
+            {/* Quick Links */}
             <div className="space-y-6">
-              <h3 className="text-xl font-bold">Pages</h3>
+              <h3 className="text-xl font-bold">Quick Links</h3>
               <ul className="space-y-3">
                 <li>
-                  <a
-                    href="#home"
+                  <Link
+                    to="/"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#about"
+                  <Link
+                    to="/about"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#menu"
+                  <Link
+                    to="/menu"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Menu
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#pricing"
-                    className="text-gray-300 hover:text-white transition-colors"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    to="/contact"
                     className="text-gray-300 hover:text-white transition-colors"
                   >
                     Contact
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#delivery"
-                    className="text-gray-300 hover:text-white transition-colors"
-                  >
-                    Delivery
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
