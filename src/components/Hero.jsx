@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
               <button
                 onClick={() => navigate("/menu")}
-                className="border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-full hover:bg-gray-100 transition-all duration-300 font-medium text-lg"
+                className="border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-full hover:bg-red-600 transition-all duration-300 hover:text-white font-medium text-lg"
               >
                 Explore Menu
               </button>

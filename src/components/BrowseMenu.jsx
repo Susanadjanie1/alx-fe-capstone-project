@@ -6,7 +6,7 @@ const BrowseMenu = () => {
   const menuCategories = [
     {
       icon: <UtensilsCrossed className="w-12 h-12 text-gray-600" />,
-      title: "Main Dishes (Rice)",
+      title: "Main Dishes",
       description:
         "Quick, complete, and satisfying meals. Flavorful rice, crispy fries, or noodles perfectly paired with your choice of protein.",
       categoryId: "C01",
@@ -14,7 +14,7 @@ const BrowseMenu = () => {
     },
     {
       icon: <ChefHat className="w-12 h-12 text-gray-600" />,
-      title: "Traditional Staples",
+      title: "Local Dishes",
       description:
         "Experience the true taste of home. Authentic, comforting classics like Fufu and Banku served with rich soups and sauces.",
       categoryId: "C02",
@@ -22,7 +22,7 @@ const BrowseMenu = () => {
     },
     {
       icon: <GlassWater className="w-12 h-12 text-gray-600" />,
-      title: "Beverages & Juices",
+      title: "Juices",
       description:
         "Freshly squeezed and blended daily using real fruits like pineapple, watermelon, orange and mint-lime.",
       categoryId: "C05",
