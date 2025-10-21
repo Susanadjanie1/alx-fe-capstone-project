@@ -8,6 +8,7 @@ import {
   Award,
   Heart,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const stats = [
@@ -17,45 +18,11 @@ const About = () => {
     { number: "100%", label: "Satisfied Customers" },
   ];
 
-  const features = [
-    {
-      icon: <Users className="w-8 h-8 text-red-600" />,
-      title: "Multi Cuisine",
-      description:
-        "In the new era of technology we look in the future with certainty life.",
-    },
-    {
-      icon: <Phone className="w-8 h-8 text-red-600" />,
-      title: "Easy To Order",
-      description:
-        "In the new era of technology we look in the future with certainty life.",
-    },
-    {
-      icon: <Award className="w-8 h-8 text-red-600" />,
-      title: "Fast Delivery",
-      description:
-        "In the new era of technology we look in the future with certainty life.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 px-6 md:px-16">
         <div className="max-w-7xl mx-auto">
-          {/* Feature Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center space-y-4">
-                <div className="flex justify-center">{feature.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 text-sm">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-
           {/* Main About Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Text and Stats */}
@@ -70,23 +37,6 @@ const About = () => {
                   their warmth and dedication, strives to make every visit an
                   unforgettable event.
                 </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-2 gap-6">
-                {stats.map((stat, index) => (
-                  <div
-                    key={index}
-                    className="text-center p-6 bg-gray-50 rounded-lg"
-                  >
-                    <div className="text-3xl md:text-4xl font-bold text-red-600 mb-2">
-                      {stat.number}
-                    </div>
-                    <div className="text-gray-600 font-medium">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
 
@@ -128,8 +78,39 @@ const About = () => {
         </div>
       </section>
 
+      {/* Statistics Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 md:px-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Journey in Numbers
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Discover the milestones that define our commitment to excellence
+              in food service
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-shadow duration-300"
+              >
+                <div className="text-4xl md:text-5xl font-bold text-red-600 mb-3">
+                  {stat.number}
+                </div>
+                <div className="text-gray-700 font-semibold text-lg">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Story Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:px-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
@@ -163,13 +144,13 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition-colors font-medium">
+              <div className="pt-4">
+                <Link
+                  to="/menu"
+                  className="inline-block bg-red-600 text-white px-8 py-3 rounded-full hover:bg-red-700 transition-colors font-medium"
+                >
                   Order Now
-                </button>
-                <button className="border-2 border-gray-800 text-gray-800 px-8 py-3 rounded-full hover:bg-gray-100 transition-colors font-medium">
-                  Learn More
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -177,12 +158,12 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-16 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-12">Our Values</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="space-y-4">
+            <div className="bg-white rounded-2xl shadow-lg p-8 space-y-4 hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full mx-auto flex items-center justify-center">
                 <Heart className="w-8 h-8 text-red-600" />
               </div>
@@ -195,7 +176,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="bg-white rounded-2xl shadow-lg p-8 space-y-4 hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full mx-auto flex items-center justify-center">
                 <Award className="w-8 h-8 text-red-600" />
               </div>
@@ -208,7 +189,7 @@ const About = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="bg-white rounded-2xl shadow-lg p-8 space-y-4 hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-red-100 rounded-full mx-auto flex items-center justify-center">
                 <Users className="w-8 h-8 text-red-600" />
               </div>

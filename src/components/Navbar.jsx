@@ -22,7 +22,12 @@ const Navbar = () => {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span>(233)55-1213-507</span>
+              <a
+                href="tel:+2330200128973"
+                className="hover:text-red-400 transition-colors"
+              >
+                (233) 020-012-8973
+              </a>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
