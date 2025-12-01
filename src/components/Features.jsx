@@ -21,9 +21,10 @@ const Features = () => {
   ];
 
   return (
-    <section className="mt-20">
-      {/* Features Section Title */}
-      <div className="text-center mb-16">
+    <section className="mt-20 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Features Section Title */}
+        <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Why Choose Masad Foods?
         </h2>
@@ -33,19 +34,20 @@ const Features = () => {
         </p>
       </div>
 
-      {/* Features Grid */}
-      <div className="grid md:grid-cols-3 gap-8">
-        {features.map((feature, index) => (
-          <div key={index} className="text-center space-y-4">
-            <div className="w-16 h-16 bg-red-100 rounded-full mx-auto flex items-center justify-center">
-              {feature.icon}
+        {/* Features Grid */}
+        <div className="grid md:grid-cols-3 gap-8">
+          {features.map((feature, index) => (
+            <div key={index} className="text-center space-y-4">
+              <div className="w-16 h-16 bg-red-100 rounded-full mx-auto flex items-center justify-center">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800">
+                {feature.title}
+              </h3>
+              <p className="text-gray-600">{feature.description}</p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-800">
-              {feature.title}
-            </h3>
-            <p className="text-gray-600">{feature.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

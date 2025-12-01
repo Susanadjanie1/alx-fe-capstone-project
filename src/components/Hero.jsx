@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const navigate = useNavigate();
   return (
-    <section id="home" className="relative bg-white pt-32 pb-20 px-6 md:px-16">
+    <section id="home" className="relative bg-white pt-32 pb-20 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           {/* Left content */}

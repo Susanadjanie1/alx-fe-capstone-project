@@ -63,7 +63,7 @@ const MenuPage = () => {
 
   if (loading) {
     return (
-      <section id="menu" className="max-w-7xl mx-auto px-6 py-16">
+      <section id="menu" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-600 mx-auto"></div>
           <p className="mt-4 text-gray-600">Loading menu...</p>
@@ -74,7 +74,7 @@ const MenuPage = () => {
 
   if (error) {
     return (
-      <section id="menu" className="max-w-7xl mx-auto px-6 py-16">
+      <section id="menu" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center">
           <p className="text-red-600">{error}</p>
         </div>
@@ -84,7 +84,7 @@ const MenuPage = () => {
 
   if (!menuData) {
     return (
-      <section id="menu" className="max-w-7xl mx-auto px-6 py-16">
+      <section id="menu" className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center">
           <p className="text-gray-600">No menu data available.</p>
         </div>
@@ -109,7 +109,7 @@ const MenuPage = () => {
   };
 
   return (
-    <section id="menu" className="max-w-7xl mx-auto px-6 py-16 pt-32">
+    <section id="menu" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 pt-32">
       {/* Breadcrumb Navigation */}
       <Breadcrumb items={generateBreadcrumbItems()} />
 

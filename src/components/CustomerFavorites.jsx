@@ -48,7 +48,7 @@ const CustomerFavorites = () => {
   if (loading) {
     return (
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center">
             <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-red-600 mx-auto"></div>
             <p className="mt-4 text-gray-600">Loading favorites...</p>

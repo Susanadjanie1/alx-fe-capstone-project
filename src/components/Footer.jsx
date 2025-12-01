@@ -48,7 +48,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gray-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-3 gap-12">
             {/* Brand Section */}
             <div className="space-y-6">
@@ -57,7 +57,7 @@ const Footer = () => {
                 className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               >
                 <img
-                  src="/MasadWhite.png"
+                  src="/MasadBlack.png"
                   alt="Masad Foods Logo"
                   className="w-12 h-12 object-contain bg-transparent"
                 />

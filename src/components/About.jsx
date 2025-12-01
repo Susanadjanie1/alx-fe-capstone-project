@@ -21,7 +21,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-white pt-20">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 px-6 md:px-16">
+      <section className="relative pt-24 pb-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           {/* Main About Section */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -80,7 +80,7 @@ const About = () => {
 
       {/* Statistics Section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Our Journey in Numbers
@@ -111,7 +111,7 @@ const About = () => {
 
       {/* Story Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
             <div className="relative group">
@@ -159,7 +159,7 @@ const About = () => {
 
       {/* Values Section */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-16 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-12">Our Values</h2>
 
           <div className="grid md:grid-cols-3 gap-8">
